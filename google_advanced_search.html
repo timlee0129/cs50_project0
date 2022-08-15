@@ -11,12 +11,35 @@
         <a href="index.html">Web Search</a>
         <a href="google_image_search.html">Image Search</a>
     </div>
-    <form action="https://google.com/search">
-        <input type="text" name="q">
-        <div class="form_submit">
-            <input type="submit" value="Google Search">
-        </div>
-    </form>
+    <div class="logo_small_topleft">
+    </div>
+    <div style="position:relative; top:40px; left:35px;">
+        <h2 style="font-weight: normal;color:rgba(255, 60, 0, 0.897);">
+            Advanced Search
+        </h2>
+        <hr id="extended_line">
+        <h3 style="font-weight: normal; position: relative; top: 30px">
+            Find pages with...
+        </h3>
+        <form action="https://google.com/search" class="adv_search_form">
+            <div class="advanced_search">
+                <label for="as_q">all these words</label>
+                <input type="text" id="as_q" name="as_q"/>
+                
+                <label for="as_epq">this exact word or phrase</label>
+                <input type="text" id="as_epq" name="as_epq"/>
+                
+                <label for="as_oq">any of these words</label>
+                <input type="text" id="as_oq" name="as_oq"/>
+                
+                <label for="as_eq">none of these words</label>
+                <input type="text" id="as_eq" name="as_eq"/>
+                
+                &nbsp
+                <div align="right"><input type="submit" value="Advanced Search"></div>
+            </div>
+        </form>
+    </div>
 </body>
 
 </html>
